@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/querys.css" />
+    <link rel="icon" href="/assets/imgs/venum-face.png" />
+    <title>PortFolio J.</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a id="nav-link" href="#welcome-section">Home</a>
+      <a id="nav-link" href="#bio">Sobre mi</a>
+      <a id="nav-link" href="#project-tile">Proyects</a>
+    </nav>
+
+    <section id="welcome-section">
+      <div class="indicator"><span></span></div>
+
+      <div id="content">
+        <h1>Jonathan Ortega DEV</h1>
+        <label id="mostrar_bio" for="contenido">👁️‍🗨️</label>
+        <input id="contenido" type="checkbox" />
+        <p id="bio-mensaje">
+          Después de años de dedicación al deporte, canalice mi energía y
+          determinación hacia el mundo del desarrollo web. Buscando innovar con
+          diseños armónicos y originales.
+        </p>
+      </div>
+    </section>
+
+    <section id="bio">
+      <label id="mostrar_contenido_contacto" for="contacto"
+        >Informacion de contacto</label
+      >
+      <input id="contacto" type="checkbox" />
+      <div id="contenido_contacto">
+        <div class="content-contact">
+          <span class="sombra-span">📌 </span>
+          <span class="sombra-span"
+            >Ciudad autónoma de Buenos Aires, Argentina</span
+          >
+          <span class="sombra-span">📞</span>
+          <span class="sombra-span">+541122684234</span>
+          <span class="sombra-span">🖥️</span>
+          <span class="sombra-span">jonnhyortega@gmail.com</span>
+        </div>
+
+        <div id="redes">
+          <a
+            target="_blank"
+            id="profile-link"
+            href="https://github.com/Jonnhyortega"
+          >
+            <img
+              id="git"
+              src="assets/imgs/GitHub-Logo.png"
+              alt="Logo de github"
+            />
+          </a>
+
+          <a
+            target="_blank"
+            id="profile-link"
+            href="https://www.linkedin.com/in/jonathan-ortega-a00970191/"
+          >
+            <img
+              id="lkd"
+              src="https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png"
+              alt="Logo de linkedin"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <label id="menu_toggle" for="ver-proyectos"
+        >Proyectos para curso FreeCodeCamp</label
+      >
+      <input id="ver-proyectos" type="checkbox" />
+
+      <div id="contenedor_proyects">
+        <div class="project-tile">
+          <span id="proyect-title">Formulario</span>
+          <span id="emoji-animado">👇</span>
+          <a
+            id="proyect"
+            target="_blank"
+            href="https://formulario-freecode.vercel.app"
+          >
+            <img
+              id="project-tile"
+              src="assets/imgs/project-img.jpg"
+              alt="formulario"
+            />
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <span id="proyect-title">Homenaje</span>
+          <span id="emoji-animado">👇</span>
+          <a
+            id="proyect"
+            target="_blank"
+            href="file:///C:/Users/54112/Desktop/Jonnhy/Programacion/Free%20Code%20Camp/Dise%C3%B1o%20Web%20responsivo/segundaParte/sitioWebHomenaje/index.html"
+          >
+            <img
+              id="project-tile"
+              src="/assets/imgs/project-img.jpg"
+              alt="formuluario"
+            />
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <span id="proyect-title">Página de documentación</span>
+          <span id="emoji-animado">👇</span>
+          <a
+            id="proyect"
+            target="_blank"
+            href="https://pagina-documentacion.vercel.app"
+          >
+            <img
+              id="project-tile"
+              src="/assets/imgs/project-img.jpg"
+              alt="mma"
+            />
+          </a>
+        </div>
+
+        <div class="project-tile">
+          <span id="proyect-title">Landing Page</span>
+          <span id="emoji-animado">👇</span>
+          <a
+            id="proyect"
+            target="_blank"
+            href="https://landing-venum.vercel.app/"
+          >
+            <img
+              id="project-tile"
+              src="assets/imgs/venum-face.png"
+              alt="land-page"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+   
+
+    <footer>
+      <span>© Todos los derechos reservados ©</span>
+    </footer>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
