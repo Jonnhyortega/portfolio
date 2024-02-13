@@ -1,9 +1,4 @@
 /* MEDIA QUERYS */
-@media (max-width: 1300px) {
-  #welcome-section {
-    margin-top: 7%;
-  }
-}
 
 @media (max-width: 1200px) {
   #contenedor_proyects {
@@ -29,6 +24,14 @@
 @media (max-width: 839px) {
   body {
     padding: 0 0 500px 0;
+  }
+
+  #content-navbar {
+    width: 100%;
+  }
+
+  #open_header {
+    font-size: 1.3em;
   }
 
   #content {

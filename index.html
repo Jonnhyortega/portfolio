@@ -6,14 +6,28 @@
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" href="assets/querys.css" />
     <link rel="icon" href="/assets/imgs/sitio-web.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>PortFolio J.</title>
   </head>
   <body>
-    <nav id="navbar">
-      <a id="nav-link" href="#welcome-section">Home</a>
-      <a id="nav-link" href="#bio">Sobre mi</a>
-      <a id="nav-link" href="#project-tile">Proyects</a>
-    </nav>
+    <header id="header">
+      <nav id="navbar">
+        <div id="content-navbar">
+          <a id="nav-link" href="#welcome-section">Home</a>
+          <a id="nav-link" href="#bio">Sobre mi</a>
+          <a id="nav-link" href="#project-tile">Proyects</a>
+        </div>
+      </nav>
+      <button onclick="abrirCerrarMenu()" id="open_header">
+        <i class="fa-solid fa-arrow-down"></i>
+      </button>
+    </header>
 
     <section id="welcome-section">
       <div class="indicator"><span></span></div>
@@ -36,16 +50,6 @@
       >
       <input id="contacto" type="checkbox" />
       <div id="contenido_contacto">
-        <div class="content-contact">
-          <span class="sombra-span">📌 </span>
-          <span class="sombra-span"
-            >Ciudad autónoma de Buenos Aires, Argentina</span
-          >
-          <span class="sombra-span">📞</span>
-          <span class="sombra-span">+541122684234</span>
-          <span class="sombra-span">🖥️</span>
-          <span class="sombra-span">jonnhyortega@gmail.com</span>
-        </div>
 
         <div id="redes">
           <a
@@ -72,6 +76,15 @@
             />
           </a>
         </div>
+        <div class="content-contact">
+          <span class="sombra-span"
+            >📌 Ciudad autónoma de Buenos Aires, Argentina</span
+          >
+          <span class="sombra-span">📞 +541122684234</span>
+          <span class="sombra-span">🖥️ jonnhyortega@gmail.com</span>
+        </div>
+
+       
       </div>
     </section>
 
