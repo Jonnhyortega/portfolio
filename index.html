@@ -15,6 +15,7 @@
     />
     <title>PortFolio J.</title>
   </head>
+
   <body>
     <header id="header">
       <nav id="navbar">
@@ -29,28 +30,47 @@
       </button>
     </header>
 
+    <header id="header_mobiles">
+      <nav id="navbar">
+        <div id="content-navbar">
+          <a id="nav-link" href="#welcome-section"
+            ><i class="fa-solid fa-house" alt="Inicio "></i
+          ></a>
+          <a id="nav-link" href="#bio"
+            ><i class="fa-solid fa-id-card" alt="Sobre mi"></i
+          ></a>
+          <a id="nav-link" href="#projects"
+            ><i class="fa-solid fa-diagram-project" alt="Proyectos"></i
+          ></a>
+        </div>
+      </nav>
+
+      <button onclick="abrirCerrarMenuMobiles()" id="open_header">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </header>
+
     <section id="welcome-section">
       <div class="indicator"><span></span></div>
 
       <div id="content">
         <h1>Jonathan Ortega DEV</h1>
-        <label id="mostrar_bio" for="contenido">👁️‍🗨️</label>
-        <input id="contenido" type="checkbox" />
-        <p id="bio-mensaje">
-          Después de años de dedicación al deporte, canalice mi energía y
-          determinación hacia el mundo del desarrollo web. Buscando innovar con
-          diseños armónicos y originales.
-        </p>
+        <button onclick="maquinaEscribir('bio-mensaje')" id="mostrar_bio">
+          👁️‍🗨️
+        </button>
+        <p id="bio-mensaje"></p>
       </div>
     </section>
 
     <section id="bio">
-      <label id="mostrar_contenido_contacto" for="contacto"
+      <label
+        onclick="mostrarContenido"
+        id="mostrar_contenido_contacto"
+        for="contacto"
         >Informacion de contacto</label
       >
       <input id="contacto" type="checkbox" />
       <div id="contenido_contacto">
-
         <div id="redes">
           <a
             target="_blank"
@@ -83,8 +103,6 @@
           <span class="sombra-span">📞 +541122684234</span>
           <span class="sombra-span">🖥️ jonnhyortega@gmail.com</span>
         </div>
-
-       
       </div>
     </section>
 
