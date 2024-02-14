@@ -44,3 +44,5 @@ const maquinaEscribir = () => {
 
   bioMensaje.innerHTML = contenido;
 };
+
+
