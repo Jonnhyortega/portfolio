@@ -17,49 +17,39 @@
   </head>
 
   <body>
+    <div class="indicator"><span></span></div>
     <header id="header">
       <nav id="navbar">
-        <div id="content-navbar">
-          <a id="nav-link" href="#welcome-section">Home</a>
-          <a id="nav-link" href="#bio">Sobre mi</a>
-          <a id="nav-link" href="#project-tile">Proyects</a>
-        </div>
-      </nav>
-      <button onclick="abrirCerrarMenu()" id="open_header">
-        <i class="fa-solid fa-arrow-down"></i>
-      </button>
-    </header>
+        <a id="nav-link" href="#welcome-section"
+          ><i class="fa-solid fa-house" alt="Inicio "></i
+        ></a>
 
-    <header id="header_mobiles">
-      <nav id="navbar">
-        <div id="content-navbar">
-          <a id="nav-link" href="#welcome-section"
-            ><i class="fa-solid fa-house" alt="Inicio "></i
-          ></a>
-          <a id="nav-link" href="#bio"
-            ><i class="fa-solid fa-id-card" alt="Sobre mi"></i
-          ></a>
-          <a id="nav-link" href="#projects"
-            ><i class="fa-solid fa-diagram-project" alt="Proyectos"></i
-          ></a>
-        </div>
+        <a id="nav-link" href="#bio"
+          ><i class="fa-solid fa-id-card" alt="Sobre mi"></i
+        ></a>
+
+        <a id="nav-link" href="#projects"
+          ><i class="fa-solid fa-diagram-project" alt="Proyectos"></i
+        ></a>
       </nav>
 
       <button onclick="abrirCerrarMenuMobiles()" id="open_header">
-        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-lock-open"></i>
       </button>
     </header>
 
     <section id="welcome-section">
-      <div class="indicator"><span></span></div>
-
-      <div id="content">
-        <h1>Jonathan Ortega DEV</h1>
-        <button onclick="maquinaEscribir('bio-mensaje')" id="mostrar_bio">
-          👁️‍🗨️
-        </button>
-        <p id="bio-mensaje"></p>
-      </div>
+      <h1>Jonathan Ortega DEV</h1>
+      <img
+        id="img-perfil"
+        src="/assets/imgs/img-perfil.jpg"
+        alt="Imagen de perfil"
+      />
+      <p id="bio-mensaje">
+        Después de años de dedicación al deporte, canalice mi energía y
+        determinación hacia el mundo del desarrollo web. Buscando innovar con
+        diseños armónicos y originales.
+      </p>
     </section>
 
     <section id="bio">
@@ -67,7 +57,7 @@
         onclick="mostrarContenido"
         id="mostrar_contenido_contacto"
         for="contacto"
-        >Informacion de contacto</label
+        >Contacto</label
       >
       <input id="contacto" type="checkbox" />
       <div id="contenido_contacto">
@@ -107,12 +97,9 @@
     </section>
 
     <section id="projects">
-      <label id="menu_toggle" for="ver-proyectos"
-        >Proyectos para curso FreeCodeCamp</label
-      >
-      <input id="ver-proyectos" type="checkbox" />
+      <span id="project-title"> Proyectos FREE CODE CAMP </span>
 
-      <div id="contenedor_proyects">
+      <div id="contenedor_projects">
         <div class="project-tile">
           <span id="proyect-title">Formulario</span>
           <span id="emoji-animado">👇</span>
@@ -177,6 +164,38 @@
           </a>
         </div>
       </div>
+    </section>
+
+    <!-- <i class="fa-brands fa-js"></i> -->
+    <!-- <i class="fa-brands fa-html5"></i> -->
+    <!-- <i class="fa-brands fa-css3-alt"></i> -->
+    <section id="projects">
+      <span id="project-title"> Proyectos NUCBA </span>
+      <div id="contenedor-projects">
+        <div class="project-tile">
+          <span id="proyect-title">Landing</span>
+          <span id="emoji-animado">👇</span>
+          <a
+            id="proyect"
+            target="_blank"
+            href="https://decoracion-chulo.vercel.app/"
+          >
+            <img
+              id="project-tile"
+              src="/assets/imgs/chulos-terrazos.png"
+              alt="landing page"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <span id="project-title">
+        Proyectos ALURA - ONE - ORACLE
+      </span>
+        
+      <div id="contenedor-projects_one"></div>
     </section>
 
     <footer>

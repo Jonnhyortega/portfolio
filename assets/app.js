@@ -24,25 +24,27 @@ const abrirCerrarMenu = () => {
   }
 };
 
-let leftMenu = document.getElementById("header_mobiles");
+let leftMenu = document.getElementById("header");
 const abrirCerrarMenuMobiles = () => {
   if (leftMenu.style.left === "-10%") {
-    leftMenu.style.left = "0";
-    botonOpenMenu.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+    leftMenu.style.left = "-1%";
+    botonOpenMenu.innerHTML = `<i class="fa-solid fa-lock"></i>`;
   } else if ((leftMenu.style.left = "0")) {
     leftMenu.style.left = "-10%";
-    botonOpenMenu.innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
+    botonOpenMenu.innerHTML = `<i class="fa-solid fa-lock-open"></i>`;
   }
 };
 
 // FUNCION PARA MOSTRAR #BIO-MENSAJE
 
-const maquinaEscribir = () => {
-  let bioMensaje = document.getElementById("bio-mensaje");
-  let contenido =
-    " Después de años de dedicación al deporte, canalice mi energía y determinación hacia el mundo del desarrollo web. Buscando innovar condiseños armónicos y originales.";
+const desplegarMensaje = () => {
+  let content = document.getElementById("content");
 
-  bioMensaje.innerHTML = contenido;
+  if (content === "1rem") {
+    content.style.height = "15rem";
+  } else if (content === "15rem") {
+    content.style.height = "1rem";
+  }
 };
 
 
