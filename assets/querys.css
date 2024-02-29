@@ -1,47 +1,33 @@
 /* MEDIA QUERYS */
 
-@media (max-width: 1200px) {
-  #contenedor_proyects {
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    gap: 50px;
-  }
-}
+/* @media (max-width: 1200px) {
+} */
 
 @media (max-width: 1155px) {
   body {
     padding: 0 0 100px 0;
   }
-  #welcome-section {
-    margin-top: 7%;
-  }
 
   #content h1 {
     font-size: 4em;
   }
+
+  #contenedor_projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 1000px) {
-  #title-nav {
-    font-size: 1rem;
+  #contenedor_projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 839px) {
-  body {
-    padding: 0 0 500px 0;
-  }
-
-  #content {
-    gap: 10px;
-    height: auto;
-  }
   #content p {
     font-size: 1.5em;
-  }
-
-  #welcome-section {
-    margin-top: 20%;
   }
 }
 
@@ -64,9 +50,9 @@
   }
 }
 
-@media (max-width: 725px) {
-  #welcome-section {
-    margin-top: 16%;
+@media (max-width: 600px) {
+  #contenedor_projects {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -91,20 +77,13 @@
 }
 
 @media (max-width: 498px) {
-  body {
-    padding: 0 0 270px 0;
-  }
-  #welcome-section {
-    margin-top: 25%;
-  }
-
   #contenido_contacto span {
     font-size: 0.9rem;
   }
+
   #contenido_contacto {
     box-shadow: none;
     border: none;
-    background-color: transparent;
     width: auto;
   }
 
