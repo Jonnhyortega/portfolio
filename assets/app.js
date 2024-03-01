@@ -1,15 +1,16 @@
 // // BARRA DE SCROLL SUPERIOR
 
 const indicator = document.querySelector(".indicator span");
-
 const progressBar = () => {
   const { scrollTop, scrollHeight } = document.documentElement;
   const scrollPercent = (scrollTop / (scrollHeight - window.innerHeight)) * 100;
 
   indicator.style.width = `${scrollPercent}%`;
 };
-
 window.addEventListener("scroll", progressBar);
+
+
+
 
 // FUNCION PARA ABRIR MENU
 let topDeMenu = document.getElementById("header");
@@ -34,6 +35,9 @@ const abrirCerrarMenuMobiles = () => {
     botonOpenMenu.innerHTML = `<i class="fa-solid fa-lock-open"></i>`;
   }
 };
+
+
+
 
 // FUNCION PARA MOSTRAR #BIO-MENSAJE
 

@@ -38,15 +38,8 @@
       </button>
     </header>
 
-    <section id="welcome-section">
-      <h1>
-        Jonathan Ortega DEV
-        <img
-          id="img-perfil"
-          src="/assets/imgs/img-perfil.jpg"
-          alt="Imagen de perfil"
-        />
-      </h1>
+    <section id="welcome-section" class="sections">
+      <h1>Jonathan Ortega DEV</h1>
 
       <p id="bio-mensaje">
         Después de años de dedicación al deporte, canalice mi energía y
@@ -55,7 +48,7 @@
       </p>
     </section>
 
-    <section id="bio">
+    <section id="bio" class="sections">
       <label
         onclick="mostrarContenido"
         id="mostrar_contenido_contacto"
@@ -63,7 +56,31 @@
         >Contacto</label
       >
       <input id="contacto" type="checkbox" />
+
       <div id="contenido_contacto">
+        <img
+          id="img-perfil"
+          src="/assets/imgs/img-perfil.jpg"
+          alt="Imagen de perfil"
+        />
+
+        <div class="content-contact">
+          <span class="span-content-contact">
+            <i class="fa-solid fa-earth-americas"></i> Ciudad autónoma de Buenos
+            Aires, Argentina
+          </span>
+
+          <span class="span-content-contact">
+            <i class="fa-solid fa-phone"></i>
+            +541122684234
+          </span>
+
+          <span class="span-content-contact">
+            <i class="fa-solid fa-at"></i>
+            jonnhyortega@gmail.com
+          </span>
+        </div>
+
         <div id="redes">
           <a
             target="_blank"
@@ -89,22 +106,22 @@
             />
           </a>
         </div>
-        <div class="content-contact">
-          <span class="sombra-span"
-            >📌 Ciudad autónoma de Buenos Aires, Argentina</span
-          >
-          <span class="sombra-span">📞 +541122684234</span>
-          <span class="sombra-span">🖥️ jonnhyortega@gmail.com</span>
-        </div>
       </div>
     </section>
 
-    <section id="projects">
-      <span id="project-title"> Proyectos FREE CODE CAMP </span>
+    <section id="projects" class="sections">
+      <span id="project-title">
+        Proyectos FREE CODE CAMP
+        <label id="freeCodeCamp-label" for="freeCodeCamp"
+          ><i class="fa-regular fa-folder-open"></i
+        ></label>
+      </span>
 
-      <div id="contenedor_projects">
+      <input id="freeCodeCamp" type="checkbox" />
+      <div id="contenedor_projects_freeCodeCamp">
         <div class="project-tile">
           <span id="proyect-title">Formulario</span>
+
           <span id="emoji-animado">👇</span>
           <a
             id="proyect"
@@ -113,10 +130,15 @@
           >
             <img
               id="project-tile"
-              src="assets/imgs/project-img.jpg"
+              src="/assets/imgs/FORMU.png"
               alt="formulario"
             />
           </a>
+
+          <span id="icons-languages">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+          </span>
         </div>
 
         <div class="project-tile">
@@ -125,30 +147,36 @@
           <a
             id="proyect"
             target="_blank"
-            href="file:///C:/Users/54112/Desktop/Jonnhy/Programacion/Free%20Code%20Camp/Dise%C3%B1o%20Web%20responsivo/segundaParte/sitioWebHomenaje/index.html"
+            href="https://homenaje-favoloro.vercel.app/"
           >
             <img
               id="project-tile"
-              src="/assets/imgs/project-img.jpg"
+              src="/assets/imgs/homenaje-favaloro.png"
               alt="formuluario"
             />
           </a>
+          <span id="icons-languages">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+          </span>
         </div>
 
         <div class="project-tile">
           <span id="proyect-title">Página de documentación</span>
+
           <span id="emoji-animado">👇</span>
           <a
             id="proyect"
             target="_blank"
             href="https://pagina-documentacion.vercel.app"
           >
-            <img
-              id="project-tile"
-              src="/assets/imgs/project-img.jpg"
-              alt="mma"
-            />
+            <img id="project-tile" src="/assets/imgs/MMA.png" alt="mma" />
           </a>
+
+          <span id="icons-languages">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+          </span>
         </div>
 
         <div class="project-tile">
@@ -165,16 +193,22 @@
               alt="land-page"
             />
           </a>
+          <span id="icons-languages">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+          </span>
         </div>
       </div>
     </section>
 
-    <!-- <i class="fa-brands fa-js"></i> -->
-    <!-- <i class="fa-brands fa-html5"></i> -->
-    <!-- <i class="fa-brands fa-css3-alt"></i> -->
-    <section id="projects">
-      <span id="project-title"> Proyectos NUCBA </span>
-      <div id="contenedor_projects">
+    <section id="projects" class="sections">
+      <span id="project-title"> Proyectos NUCBA <label id="nucba-label" for="nucba"
+        ><i class="fa-regular fa-folder-open"></i>
+      </label> </span>
+
+      
+      <input id="nucba" type="checkbox" />
+      <div id="contenedor_projects_nucba">
         <div class="project-tile">
           <span id="proyect-title">Landing</span>
           <span id="emoji-animado">👇</span>
@@ -189,14 +223,40 @@
               alt="landing page"
             />
           </a>
+
+          <span id="icons-languages">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+          </span>
+        </div>
+
+        <div class="project-tile">
+          <span id="proyect-title">Portfolio</span>
+          <span id="emoji-animado">👇</span>
+          <a
+            id="proyect"
+            target="_blank"
+            href="https://entrega-dos-dw.vercel.app/"
+          >
+            <img
+              id="project-tile"
+              src="/assets/imgs/logo-simple.png"
+              alt="landing page"
+            />
+          </a>
+
+          <span id="icons-languages">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+          </span>
         </div>
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="sections">
       <span id="project-title"> Proyectos ALURA - ONE - ORACLE </span>
 
-      <div id="contenedor_projects"></div>
+      <div id="contenedor_projects_one"></div>
     </section>
 
     <footer>
