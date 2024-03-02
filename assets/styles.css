@@ -170,12 +170,6 @@ h1 {
   writing-mode: 100%;
   margin: 0 auto;
   animation: nombre 5s infinite;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  /* background-image: url(/assets/imgs/code-background.jpg); */
 }
 
 @keyframes nombre {

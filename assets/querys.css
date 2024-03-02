@@ -1,162 +1,111 @@
 /* MEDIA QUERYS */
-
-/* @media (max-width: 1200px) {
-} */
-
-@media (max-width: 1155px) {
-  body {
-    padding: 0 0 100px 0;
-  }
-
-  #content h1 {
-    font-size: 4em;
-  }
-
-  #contenedor_projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 1000px) {
-  #contenedor_projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 839px) {
-  #content p {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 768px) {
-  #contenedor_proyects {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .project-tile {
-    height: auto;
-    gap: 30px;
-  }
-
-  #contenido_contacto {
-    width: 100%;
-  }
-  #content p {
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 600px) {
-  #contenedor_projects {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 579px) {
-  body {
-    padding: 0 0 100px 0;
-  }
-
-  #title-nav {
-    font-size: 0.8rem;
-  }
-
+/* Ipad mini */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   #welcome-section {
-    /* margin-top: 16%; */
     padding: 0;
-    justify-content: start;
-  }
-
-  #content {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 498px) {
-  #contenido_contacto span {
-    font-size: 0.9rem;
-  }
-
-  #contenido_contacto {
-    box-shadow: none;
-    border: none;
-    width: auto;
-  }
-
-  #mostrar_contenido_contacto,
-  #menu_toggle {
-    font-size: 2.5em;
-  }
-
-  #redes {
-    box-shadow: none;
-    border: none;
-    background-color: transparent;
-    width: auto;
-  }
-
-  .project-tile a img {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media (max-width: 411px) {
-  body {
-    padding: 0 0 100px 0;
-  }
-
-  #welcome-section h1 {
-    font-size: 2rem;
-  }
-
-  #welcome-section {
-    padding: 10px 0 0 0;
     height: auto;
-    margin-top: 25%;
-  }
-  #bio {
-    height: auto;
-    pad: 100px 0 0 0;
+    gap: 1rem;
   }
 
-  #mostrar_contenido_contacto {
-    font-size: 1.5em;
-  }
-
-  #contenido_contacto {
+  #project-title {
     padding: 0;
-  }
-  #content {
-    gap: 20px;
-  }
-
-  #contenedor_proyects {
-    padding: 0;
+    gap: 1rem;
     flex-direction: column;
   }
 
-  #menu_toggle {
-    font-size: 1.5em;
-  }
-
-  footer span {
-    text-align: center;
+  #freeCodeCamp:checked ~ #contenedor_projects_freeCodeCamp,
+  #nucba:checked ~ #contenedor_projects_nucba,
+  #freeCodeCamp:checked ~ #contenedor_projects_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 373px) {
-  #contenido_contacto {
-    padding: 0;
-    width: 80%;
+/* Iphone XR */
+@media screen and (min-width: 414px) and (max-width: 896px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* pixel 7 */
+@media screen and (min-width: 412px) and (max-width: 915px) {
+  h1 {
+    font-size: 4rem;
+  }
+  body {
+    padding: 0 0 24rem 0;
+  }
+}
+
+/* Iphone SE */
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .sections {
+    padding: 1rem;
   }
 
-  .project-tile a img {
-    width: 120px;
-    height: 120px;
+  #header {
+    display: none;
+  }
+
+  #welcome-section {
+    height: auto;
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  ##project-title {
+    padding: 0;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  #contenedor_projects_nucba,
+  #contenedor_projects_freeCodeCamp {
+    flex-direction: column;
+  }
+  bio-mensaje {
+    font-size: 1.2rem;
+  }
+
+  body {
+    padding: 0 0 23rem 0;
+  }
+}
+/* Samsungs galaxy s8*/
+@media screen and (min-width: 360px) and (max-width: 740px) {
+  #header {
+    display: none;
+  }
+
+  #welcome-section {
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  h1 {
+    padding: 0;
+    font-size: 3rem;
+  }
+
+  #bio-mensaje {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  #project-title {
+    padding: 0;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  #contenedor_projects_nucba,
+  #contenedor_projects_freeCodeCamp {
+    flex-direction: column;
   }
 }
