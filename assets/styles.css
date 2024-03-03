@@ -36,7 +36,7 @@
 /* --------------------VARIABLES-------------------*/
 
 *::selection {
-  background: rgb(68, 248, 95);
+  background: gold;
 }
 
 * {
@@ -159,7 +159,8 @@ body {
   margin-top: 1rem;
 }
 
-h1 {
+h1,
+h2 {
   font-family: var(--fontWeb);
   font-size: 4rem;
   letter-spacing: 5px;
@@ -409,6 +410,7 @@ h1 {
   /* border: 1px solid white; */
   display: flex;
   justify-content: flex-end;
+  gap: 0.5rem;
 }
 
 .project-tile a {
