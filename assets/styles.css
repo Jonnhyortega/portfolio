@@ -230,13 +230,13 @@ h2 {
   border-radius: 50px;
 }
 
-#mostrar_contenido_contacto:hover {
+/* #mostrar_contenido_contacto:hover {
   transition: 0.3s all;
   letter-spacing: 0.2rem;
   color: gold;
   box-shadow: 1px 1px 10px 1px black;
   cursor: pointer;
-}
+} */
 
 #contenido_contacto {
   display: none;
@@ -252,6 +252,11 @@ h2 {
   box-shadow: 1px 1px 5px 1px black;
   font-family: var(--roboto);
   color: white;
+}
+
+#arrow-down:hover {
+  color: white;
+  cursor: pointer;
 }
 
 #img-perfil {
