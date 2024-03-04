@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Roboto:ital@1&display=swap");
 /* --------------------VARIABLES-------------------*/
 :root {
-  --gralColor: linear-gradient(to bottom, #14e6dd, #010101);
+  --gralColor: linear-gradient(to bottom, #14e6dd 40%, #010101);
+  --footerColor: linear-gradient(to bottom, #010101), #14e6dd;
   --fontWeb: "Protest Guerrilla", sans-serif;
   --roboto: "Roboto", sans-serif;
   --gral-color-font: white;
@@ -25,15 +26,15 @@
 }
 /* COLORES */
 
+/* --------------------VARIABLES-------------------*/
+
 /* PADDING PARA SECCIONES */
 .sections {
   padding: 2rem 5rem;
   background: var(--gralColor);
-  border-radius: 1rem;
+  border-top: 0.2rem solid gold;
 }
 /* PADDING PARA SECCIONES */
-
-/* --------------------VARIABLES-------------------*/
 
 *::selection {
   background: gold;
@@ -148,24 +149,21 @@ body {
 
 #welcome-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 6rem;
   margin: 0 auto;
   font-family: var(--fontWeb);
-  width: 95%;
+  width: 100%;
   height: 95vh;
-  margin-top: 1rem;
 }
 
-h1,
-h2 {
+h1 {
   font-family: var(--fontWeb);
   font-size: 4rem;
   letter-spacing: 5px;
   transition: 2s all;
-  padding: 1rem 10rem;
+  /* padding: 1rem 10rem; */
   border-radius: 10px;
   text-shadow: 1px 1px 10px white;
   writing-mode: 100%;
@@ -190,6 +188,11 @@ h2 {
   }
 }
 
+#logo {
+  width: 7rem;
+  border-radius: 5rem;
+}
+
 #bio-mensaje {
   font-size: 1.8rem;
   width: 80%;
@@ -208,9 +211,8 @@ h2 {
 #bio {
   margin: 0 auto;
   font-family: var(--fontWeb);
-  width: 95%;
+  width: 100%;
   height: auto;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,16 +229,7 @@ h2 {
   text-align: center;
   animation: projects-mation 3s;
   padding: 10px;
-  border-radius: 50px;
 }
-
-/* #mostrar_contenido_contacto:hover {
-  transition: 0.3s all;
-  letter-spacing: 0.2rem;
-  color: gold;
-  box-shadow: 1px 1px 10px 1px black;
-  cursor: pointer;
-} */
 
 #contenido_contacto {
   display: none;
@@ -327,7 +320,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  width: 95%;
+  width: 100%;
 }
 
 #project-title {
@@ -335,14 +328,13 @@ h2 {
   font-size: 100px;
   font-size: 50px;
   transition: 0.6s all;
-  border-radius: 5px;
   padding: 10px;
   color: gold;
   text-align: center;
   animation: projects-mation 2s;
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 @keyframes projects-mation {
@@ -457,7 +449,6 @@ h2 {
 #freeCodeCamp-label:hover,
 #nucba-label:hover,
 #one-label:hover {
-  border-radius: 1rem;
   color: white;
 }
 
@@ -491,13 +482,12 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
+  background: linear-gradient(to bottom, #010101, #14e6dd 100%);
 }
 
 footer span {
   letter-spacing: 3px;
   font-family: var(--roboto);
-  /* padding: 40px; */
-  border-radius: 5px;
   backdrop-filter: blur(16px) saturate(180%);
 }
 
