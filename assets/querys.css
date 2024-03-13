@@ -1,6 +1,5 @@
 /* MEDIA QUERYS */
 
-/* Ipad mini */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .sections {
     padding: 1rem;
@@ -33,7 +32,6 @@
   }
 }
 
-/* Iphone XR */
 @media screen and (min-width: 414px) and (max-width: 896px) {
   .sections {
     padding: 1rem;
@@ -43,7 +41,6 @@
   }
 }
 
-/* pixel 7 */
 @media screen and (min-width: 412px) and (max-width: 915px) {
   .sections {
     padding: 1rem;
@@ -56,7 +53,6 @@
   }
 }
 
-/* Iphone SE */
 @media screen and (min-width: 375px) and (max-width: 667px) {
   .sections {
     padding: 1rem;
@@ -101,7 +97,6 @@
     padding: 0 0 23rem 0;
   }
 }
-/* Samsungs galaxy s8*/
 @media screen and (min-width: 360px) and (max-width: 740px) {
   .sections {
     padding: 1rem;
@@ -157,3 +152,5 @@
     justify-content: center;
   }
 }
+
+/* MEDIA QUERYS */

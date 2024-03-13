@@ -391,15 +391,14 @@ h1 {
   box-shadow: 1px 1px 5px 1px black;
 }
 
-.project-tile a img {
-  width: 200px;
-  height: 200px;
-}
-
 #proyect-title {
   text-align: center;
-  color: white;
+  color: black;
   font-family: var(--roboto);
+  background-color: rgba(255, 255, 255, 0.159);
+  box-shadow: 1px 1px 5px 2px black;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 #icons-languages {
@@ -419,7 +418,11 @@ h1 {
 
 .project-tile a:hover {
   transition: 0.4s all;
-  box-shadow: 0.5px 0.5px 3px 1px white;
+  box-shadow: 1px 1px 5px 2px black;
+}
+
+#img-project {
+  width: 150px;
 }
 
 #emoji-animado {
@@ -456,18 +459,18 @@ h1 {
 #contenedor_projects_nucba,
 #contenedor_projects_one {
   display: none;
-
   gap: 0.7rem;
 }
 
 #freeCodeCamp:checked ~ #contenedor_projects_freeCodeCamp,
 #nucba:checked ~ #contenedor_projects_nucba,
-#freeCodeCamp:checked ~ #contenedor_projects_one {
+#one:checked ~ #contenedor_projects_one {
   display: flex;
 }
 
 #nucba,
-#freeCodeCamp {
+#freeCodeCamp,
+#one {
   appearance: none;
 }
 
