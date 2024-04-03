@@ -87,8 +87,6 @@
   }
 
   #contenido_contacto {
-    box-shadow: none;
-    background-color: transparent;
     gap: 1rem;
     padding: 1rem;
   }
@@ -139,7 +137,6 @@
 
   #contenido_contacto {
     box-shadow: none;
-    background-color: transparent;
     gap: 1rem;
     padding: 0;
   }

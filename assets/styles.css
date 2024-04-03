@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Roboto:ital@1&display=swap");
 /* --------------------VARIABLES-------------------*/
 :root {
-  --gralColor: linear-gradient(to bottom, #14e6dd 40%, #010101);
+  /* linear-gradient(to bottom, #14e6dd 40%, #010101) */
+  --gralColor: black;
   --footerColor: linear-gradient(to bottom, #010101), #14e6dd;
   --fontWeb: "Protest Guerrilla", sans-serif;
   --roboto: "Roboto", sans-serif;
@@ -32,7 +33,7 @@
 .sections {
   padding: 2rem 5rem;
   background: var(--gralColor);
-  border-top: 0.2rem solid gold;
+  border-top: 3px solid #14e6dd;
 }
 /* PADDING PARA SECCIONES */
 
@@ -52,6 +53,7 @@ body {
   flex-direction: column;
   gap: 3rem; /* padding: 0 0 150px 0; */
   background-color: rgb(0, 0, 0);
+  /* border: 10px solid skyblue; */
   /* background-image: url("/assets/imgs/code-background.jpg");
   background-color: rgba(255, 255, 255, 2);
   background-size: cover;
@@ -60,7 +62,7 @@ body {
 
 .indicator {
   width: 100%;
-  height: 0.7rem;
+  height: 0.8rem;
   top: 0;
   left: 0;
   position: fixed;
@@ -151,7 +153,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 6rem;
+  gap: 3rem;
   margin: 0 auto;
   font-family: var(--fontWeb);
   width: 100%;
@@ -165,7 +167,7 @@ h1 {
   transition: 2s all;
   /* padding: 1rem 10rem; */
   border-radius: 10px;
-  text-shadow: 1px 1px 10px white;
+  -webkit-text-stroke: 1px gold;
   writing-mode: 100%;
   margin: 0 auto;
   animation: nombre 5s infinite;
@@ -173,24 +175,25 @@ h1 {
 
 @keyframes nombre {
   0% {
-    text-shadow: 1px 1px 1px red;
-    color: rgba(255, 217, 0, 0.109);
+    /* text-shadow: 1px 1px 1px white; */
+    color: #14e6dd;
   }
 
   50% {
-    text-shadow: 1px 1px 2px red;
-    color: rgba(255, 217, 0, 0.558);
+    /* text-shadow: 2px 2px 2px white; */
+    color: #76f4ee;
   }
 
   100% {
-    text-shadow: 2px 2px 4px red;
-    color: rgba(255, 217, 0, 0.996);
+    /* text-shadow: 2px 2px 4px white; */
+    color: #14e6dd;
   }
 }
 
 #logo {
   width: 7rem;
   border-radius: 5rem;
+  border: 2px solid #14e6dd;
 }
 
 #bio-mensaje {
@@ -203,6 +206,25 @@ h1 {
   transition: 2s all;
   margin: 0 auto;
   text-align: left;
+}
+
+#skills {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#welcome-section span {
+  color: #14e6dd;
+  font-size: 2.5rem;
+  /* -webkit-text-stroke: 1px gold; */
+}
+
+#icon-skills {
+  display: flex;
+  gap: 1.5rem;
 }
 
 /* --------------------WELCOME-SECTION-------------------*/
@@ -225,10 +247,11 @@ h1 {
   font-size: 100px;
   font-size: 50px;
   transition: 0.6s all;
-  color: gold;
+  color: #14e6dd;
   text-align: center;
   animation: projects-mation 3s;
   padding: 10px;
+  cursor: pointer;
 }
 
 #contenido_contacto {
@@ -237,11 +260,10 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /* border: 1px solid white; */
   padding: 30px;
   gap: 30px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.159);
+  background-color: #14e6dd;
   box-shadow: 1px 1px 5px 1px black;
   font-family: var(--roboto);
   color: white;
@@ -269,8 +291,11 @@ h1 {
 
 .span-content-contact {
   font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   display: flex;
   gap: 3rem;
+  color: black;
 }
 
 #contacto {
@@ -329,7 +354,7 @@ h1 {
   font-size: 50px;
   transition: 0.6s all;
   padding: 10px;
-  color: gold;
+  color: #14e6dd;
   text-align: center;
   animation: projects-mation 2s;
   display: flex;
@@ -340,38 +365,6 @@ h1 {
 @keyframes projects-mation {
   10% {
     transform: translatex(-200%);
-    color: gold;
-    text-shadow: 1px 1px 2px white;
-  }
-
-  40% {
-    color: gold;
-    text-shadow: 3px 3px 5px white;
-  }
-
-  80% {
-    color: gold;
-    text-shadow: 5px 5px 10px white;
-  }
-
-  100% {
-    color: gold;
-    text-shadow: 7px 7px 20px 10px white;
-  }
-
-  80% {
-    color: gold;
-    text-shadow: 5px 5px 10px white;
-  }
-
-  40% {
-    color: gold;
-    text-shadow: 3px 3px 5px white;
-  }
-
-  10% {
-    color: gold;
-    text-shadow: 1px 1px 2px white;
   }
 }
 
@@ -418,11 +411,12 @@ h1 {
 
 .project-tile a:hover {
   transition: 0.4s all;
-  box-shadow: 1px 1px 5px 2px black;
+  box-shadow: 1px 1px 5px 2px white;
 }
 
 #img-project {
   width: 150px;
+  height: 150px;
 }
 
 #emoji-animado {
@@ -491,7 +485,6 @@ footer {
 footer span {
   letter-spacing: 3px;
   font-family: var(--roboto);
-  backdrop-filter: blur(16px) saturate(180%);
 }
 
 /* FOOTER */
