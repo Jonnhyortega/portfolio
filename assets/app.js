@@ -1,3 +1,4 @@
+import Typed from 'typed.js';
 // // BARRA DE SCROLL SUPERIOR
 
 const indicator = document.querySelector(".indicator span");
@@ -8,3 +9,5 @@ const progressBar = () => {
   indicator.style.width = `${scrollPercent}%`;
 };
 window.addEventListener("scroll", progressBar);
+
+
