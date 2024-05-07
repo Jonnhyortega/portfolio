@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Roboto:ital@1&display=swap");
 /* --------------------VARIABLES-------------------*/
 :root {
-  --linear-gradientoso: linear-gradient(to bottom, var(--color1) 40%, var(--color3) 60%,var(--color5));
-  --linear-gradientoso2: linear-gradient(to top, var(--color1) 40%, var(--color3) 60%,var(--color5));
+  --linear-gradientoso: linear-gradient(
+    to bottom,
+    var(--color1) 40%,
+    var(--color3) 60%,
+    var(--color5)
+  );
+  --linear-gradientoso2: linear-gradient(
+    to top,
+    var(--color1) 40%,
+    var(--color3) 60%,
+    var(--color5)
+  );
   --gralColor: black;
   --footerColor: linear-gradient(to bottom, #010101), #14e6dd;
   --fontWeb: "Protest Guerrilla", sans-serif;
@@ -28,7 +38,7 @@
 /* PADDING PARA SECCIONES */
 
 *::selection {
-  background: gold;
+  background: coral;
 }
 
 * {
@@ -64,16 +74,14 @@ body {
   z-index: 2;
 }
 
-
 /* --------------------WELCOME-SECTION-------------------*/
 
 #welcome-section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 4rem;
-  margin: 5rem auto;
-  font-family: var(--fontWeb);
+  gap: 3rem;
+  margin: 2rem auto;
   width: 100%;
   height: 100vh;
   padding: 0 0 10rem 0;
@@ -90,37 +98,34 @@ body {
   margin: 0 auto;
 }
 
-
 #logo {
   width: 6rem;
   border-radius: 5rem;
   box-shadow: 1px 5px 15px;
 }
 
-#bio-mensaje {
-  font-size: 1.8rem;
-  width: 80%;
-  color: var(--gral-color-font);
-  font-family: var(--roboto);
-  font-weight: 700;
-  padding: 0 0 15px 0;
-  transition: 2s all;
-  margin: 0 auto;
-  text-align: left;
-}
 
 #skills {
   color: white;
   font-size: 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6rem;
+  gap: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+  background:var(--linear-gradientoso2);
+  box-shadow: 1px 1px 10px -2px var(--color5);
+}
+
+.title-skills {
+  color: white;
+  font-family: var(--roboto);
 }
 
 #welcome-section span {
   color: var(--color5);
   font-size: 2.5rem;
-  /* -webkit-text-stroke: 1px gold; */
+  font-family: var(--fontWeb);
 }
 
 #icon-skills {
@@ -147,12 +152,18 @@ body {
   font-family: var(--fontWeb);
   font-size: 100px;
   font-size: 50px;
-  transition: 0.6s all;
-  color: white;
+  color: gold;
   text-align: center;
   animation: projects-mation 3s;
-  padding: 10px;
   cursor: pointer;
+  padding: 1rem;
+  border-radius: 5px;
+  background:var(--linear-gradientoso2);
+  box-shadow: 1px 1px 5px 1px var(--color5);  
+}
+
+#mostrar_contenido_contacto:hover {
+  box-shadow: 1px 1px 10px 6px var(--color5);  
 }
 
 #contenido_contacto {
@@ -164,7 +175,6 @@ body {
   padding: 30px;
   gap: 30px;
   border-radius: 5px;
-  background: var(--linear-gradientoso2);
   box-shadow: 1px 1px 5px 1px black;
   font-family: var(--roboto);
   color: white;
@@ -180,7 +190,6 @@ body {
   border-radius: 50%;
   margin: 0 auto;
   border: 4px solid rgb(255, 217, 0);
-  /* box-shadow: 1px 1px 5px 1px white; */
 }
 
 .content-contact {
@@ -189,6 +198,10 @@ body {
   gap: 10px;
 }
 
+.content-contact > span > i {
+  color: white;
+  font-size: 2rem;
+}
 .span-content-contact {
   font-size: 1.2rem;
   font-weight: 700;
@@ -196,14 +209,6 @@ body {
   display: flex;
   gap: 3rem;
   color: black;
-}
-
-#contacto {
-  appearance: none;
-}
-
-#contacto:checked ~ #contenido_contacto {
-  display: grid;
 }
 
 #redes {
@@ -248,20 +253,26 @@ body {
   width: 100%;
 }
 
+#container_projects {
+  display: flex;
+  gap: 2rem;
+}
+
 #project-title {
   font-family: var(--fontWeb);
   font-size: 100px;
   font-size: 50px;
   transition: 0.6s all;
-  padding: 10px;
-  color: white;
+  color: gold;
   text-align: center;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background:var(--linear-gradientoso2);
+  box-shadow: 1px 1px 10px 1px var(--color5);
 }
-
-
 
 .project-tile {
   border-radius: 5px;
@@ -276,7 +287,8 @@ body {
   padding: 30px;
   transition: 0.7s all;
   box-shadow: 1px 1px 5px 1px black;
-background: var(--linear-gradientoso2);}
+  background: var(--linear-gradientoso2);
+}
 
 #proyect-title {
   text-align: center;
@@ -328,41 +340,7 @@ background: var(--linear-gradientoso2);}
 }
 
 /* --------------------PROJECTS-------------------*/
-/* PROJECTS CHECKEDS */
 
-#freeCodeCamp-label,
-#nucba-label,
-#one-label {
-  cursor: pointer;
-  font-size: 3rem;
-}
-
-#freeCodeCamp-label:hover,
-#nucba-label:hover,
-#one-label:hover {
-  color: white;
-}
-
-#contenedor_projects_freeCodeCamp,
-#contenedor_projects_nucba,
-#contenedor_projects_one {
-  display: none;
-  gap: 0.7rem;
-}
-
-#freeCodeCamp:checked ~ #contenedor_projects_freeCodeCamp,
-#nucba:checked ~ #contenedor_projects_nucba,
-#one:checked ~ #contenedor_projects_one {
-  display: flex;
-}
-
-#nucba,
-#freeCodeCamp,
-#one {
-  appearance: none;
-}
-
-/* PROJECTS CHECKEDS */
 /* FOOTER */
 
 footer {

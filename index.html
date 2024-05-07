@@ -26,11 +26,16 @@
       <h1 id="typed-text"></h1>
       <span>SKILLS</span>
       <div id="skills">
+        <p class="title-skills">Front End</p>
         <div id="icon-skills-">
           <i class="fa-brands fa-html5"></i>
           <i class="fa-brands fa-css3-alt"></i>
           <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-bootstrap"></i>
         </div>
+        <p class="title-skills">Back End</p>
+
         <div id="icon-skills"> 
           <i class="fa-brands fa-java"></i>
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 10 58 35">
@@ -41,14 +46,10 @@
     </section>
 
     <section id="bio" class="sections">
-      <label
-        onclick="mostrarContenido"
-        id="mostrar_contenido_contacto"
-        for="contacto"
-        >Contacto <i id="arrow-down" class="fa-solid fa-arrow-down"></i
-      ></label>
-      <input id="contacto" type="checkbox" />
-
+      <span
+        id="mostrar_contenido_contacto">Contacto 
+        <i class="fa-solid fa-address-card"></i>      
+      </span>
       <div id="contenido_contacto">
         <img
           id="img-perfil"
@@ -102,17 +103,10 @@
     </section>
 
     <section id="projects" class="sections">
-      <span id="project-title">
-        Proyectos
-        <label id="freeCodeCamp-label" for="freeCodeCamp"
-          ><i class="fa-regular fa-folder-open"></i
-        ></label>
-      </span>
-
-      <input id="freeCodeCamp" type="checkbox" />
-      <div id="contenedor_projects_freeCodeCamp">
+      <span id="project-title">Proyectos</span>
+      <div id="container_projects">
         <div class="project-tile">
-          <span id="proyect-title">Encriptador de texto</span>
+          <span id="proyect-title">Encriptador texto</span>
           <span id="emoji-animado">👇</span>
           <a
             id="proyect"
@@ -134,7 +128,7 @@
         </div>
 
         <div class="project-tile">
-          <span id="proyect-title">Landing Page</span>
+          <span id="proyect-title">Static landing</span>
           <span id="emoji-animado">👇</span>
           <a
             id="proyect"
@@ -154,7 +148,7 @@
         </div>
 
         <div class="project-tile">
-          <span id="proyect-title">Landing</span>
+          <span id="proyect-title">Static landing</span>
           <span id="emoji-animado">👇</span>
           <a
             id="proyect"
@@ -202,12 +196,12 @@
 
     <script>
       const typed = new Typed('#typed-text', {
-        strings: ['Jonathan Ortega'],
+        strings: ['Jonathan Ortega, desarrolador web'],
         typeSpeed: 30,
         loop: false,
         showCursor: false
       });
     </script>
-    <script src="assets/app.js"></script>
+    <script src="assets/app.js" defer></script>
   </body>
 </html>

@@ -16,12 +16,6 @@
     flex-direction: column;
   }
 
-  #freeCodeCamp:checked ~ #contenedor_projects_freeCodeCamp,
-  #nucba:checked ~ #contenedor_projects_nucba,
-  #freeCodeCamp:checked ~ #contenedor_projects_one {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 
   h1 {
     text-align: center;
@@ -82,8 +76,7 @@
     flex-direction: column;
   }
 
-  #contenedor_projects_nucba,
-  #contenedor_projects_freeCodeCamp {
+  #container_projects {
     flex-direction: column;
   }
   bio-mensaje {
@@ -130,8 +123,7 @@
     flex-direction: column;
   }
 
-  #contenedor_projects_nucba,
-  #contenedor_projects_freeCodeCamp {
+  #container_projects {
     flex-direction: column;
   }
 
