@@ -1,149 +1,19 @@
 /* MEDIA QUERYS */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .sections {
-    padding: 1rem;
-  }
-  #welcome-section {
-    padding: 1rem 0;
-    height: auto;
-    gap: 1rem;
-  }
-
-  #project-title {
-    padding: 0;
-    gap: 1rem;
-    flex-direction: column;
-  }
-
-
-  h1 {
-    text-align: center;
-  }
-
-  .padding-ipads {
-    padding: 0.6rem 0 30rem 0;
-  }
-
-  #contenido_contacto{
-    background: none;
-  }
-}
-
-@media screen and (min-width: 414px) and (max-width: 896px) {
-  .sections {
-    padding: 1rem;
-  }
-  h1 {
-    font-size: 3.5rem;
-  }
-}
-
-@media screen and (min-width: 412px) and (max-width: 915px) {
-  .sections {
-    padding: 1rem;
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  body {
-    padding: 0 0 24rem 0;
-  }
-}
-
-@media screen and (min-width: 375px) and (max-width: 667px) {
-  .sections {
-    padding: 1rem;
-  }
-
-  #header {
-    display: none;
-  }
-
-  #welcome-section {
-    height: auto;
-    gap: 1rem;
-  }
-  h1 {
-    font-size: 2rem;
-    padding: 0;
-    text-align: center;
-  }
-
-  #project-title {
-    padding: 0;
-    gap: 1rem;
-    flex-direction: column;
-  }
-
+@media (max-width: 1290px) {
   #container_projects {
-    flex-direction: column;
-  }
-  bio-mensaje {
-    font-size: 1.2rem;
-  }
-
-  #contenido_contacto {
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  body {
-    padding: 0 0 23rem 0;
-  }
-}
-@media screen and (min-width: 360px) and (max-width: 740px) {
-  .sections {
-    padding: 1rem;
-  }
-  #header {
-    display: none;
-  }
-
-  #welcome-section {
-    height: auto;
-    padding: 1rem;
-    gap: 1rem;
-  }
-
-  h1 {
-    padding: 0;
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  #bio-mensaje {
-    font-size: 1.2rem;
-    width: 100%;
-  }
-
-  #project-title {
-    padding: 0;
-    gap: 1rem;
-    flex-direction: column;
-  }
-
-  #container_projects {
-    flex-direction: column;
-  }
-
-  #bio {
-    padding: 0;
-  }
-
-  #contenido_contacto {
-    box-shadow: none;
-    gap: 1rem;
-    padding: 0;
-  }
-
-  .content-contact {
-    padding: 1rem;
     display: grid;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-/* MEDIA QUERYS */
+@media (max-width: 890px) {
+  #container_projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 590px) {
+  #container_projects {
+    grid-template-columns: 1fr;
+  }
+}

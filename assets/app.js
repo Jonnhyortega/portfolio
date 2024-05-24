@@ -1,3 +1,6 @@
+const projectTitle = document.querySelector("#project-title")
+const contenidoContacto = document.querySelector("#contenido_contacto");
+const containerProjects = document.querySelector("#container_projects")
 // // BARRA DE SCROLL SUPERIOR
 const indicator = document.querySelector(".indicator span");
 const progressBar = () => {
@@ -9,16 +12,22 @@ const progressBar = () => {
 window.addEventListener("scroll", progressBar);
 
 
-// CONTENTINDO CONTACTO SHOW
-const mostrarContenido = () => {
-  let contenidoContacto = document.querySelector("#contenido_contacto");
+// function to SHOW PROJECTS & CONTACT
+
+
+document.querySelector("#mostrar_contenido_contacto").addEventListener("click", () => {
   if(contenidoContacto.style.display === "none"){
     contenidoContacto.style.display = "flex";
-  } else {
+  }else {
     contenidoContacto.style.display = "none"
   }
-}
 
-document.querySelector("#mostrar_contenido_contacto").addEventListener("click", mostrarContenido);
-
+});
+projects.addEventListener("click", () => {
+  if(containerProjects.style.display === "none"){
+    containerProjects.style.display = "flex";
+  }else{
+    containerProjects.style.display = "none";
+  }
+  });
 
