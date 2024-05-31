@@ -258,6 +258,7 @@ body {
 
 #container_projects {
   display: none;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 }
 

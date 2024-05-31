@@ -25,7 +25,7 @@ document.querySelector("#mostrar_contenido_contacto").addEventListener("click", 
 });
 projects.addEventListener("click", () => {
   if(containerProjects.style.display === "none"){
-    containerProjects.style.display = "flex";
+    containerProjects.style.display = "grid";
   }else{
     containerProjects.style.display = "none";
   }

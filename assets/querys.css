@@ -1,7 +1,6 @@
 /* MEDIA QUERYS */
 @media (max-width: 1290px) {
   #container_projects {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
