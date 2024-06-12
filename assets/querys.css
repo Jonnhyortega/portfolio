@@ -2,10 +2,16 @@
 
 @media (max-width: 890px) {
   #container_projects {
-width: 90%;  }
+    width: 90%;
+  }
+
+  #contenido_contacto{
+    border-radius: 0;
+  }
 }
 
 @media (max-width: 385px) {
   #container_projects {
-width: 100%;  }
+    width: 100%;
+  }
 }

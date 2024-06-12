@@ -1,26 +1,7 @@
 const containerProjects = document.querySelector("#container_projects");
 const projects = [
   {
-    name: "encriptador",
-    img: "/assets/imgs/encriptador.png",
-    link: "https://encriptador-alura-cegydozmx-jonathan-ortega.vercel.app/",
-    language: [
-      '<i class="fa-brands fa-html5"></i>',
-      '<i class="fa-brands fa-css3-alt"></i>',
-      '<i class="fa-brands fa-js"></i>',
-    ],
-  },
-  {
-    name: "venum landing",
-    img: "/assets/imgs/venum-face.png",
-    link: "https://landing-venum.vercel.app/",
-    language: [
-      '<i class="fa-brands fa-html5"></i>',
-      '<i class="fa-brands fa-css3-alt"></i>',
-    ],
-  },
-  {
-    name: "static eccomerce",
+    name: "Store",
     img: "/assets/imgs/chulos-terrazos.png",
     link: "https://decoracion-chulo.vercel.app/",
     language: [
@@ -30,7 +11,7 @@ const projects = [
     ],
   },
   {
-    name: "To-do list",
+    name: "To-do list App",
     img: "/assets/imgs/to-do-list.jpg",
     link: "https://lista-de-tareas-topaz.vercel.app/",
     language: [
@@ -40,17 +21,7 @@ const projects = [
     ],
   },
   {
-    name: "Pokemon Api",
-    img: "/assets/imgs/pokeApi.png",
-    link: "https://buscador-de-pokemon-chi.vercel.app/",
-    language: [
-      '<i class="fa-brands fa-html5"></i>',
-      '<i class="fa-brands fa-css3-alt"></i>',
-      '<i class="fa-brands fa-js"></i>',
-    ],
-  },
-  {
-    name: "Tienda de peliculas",
+    name: "Store",
     img: "/assets/imgs/grantMovies.png",
     link: "https://eccomerce-de-peliculas.vercel.app/",
     language: [
@@ -60,6 +31,24 @@ const projects = [
       '<i class="fa-brands fa-bootstrap"></i>',
     ],
   },
+  {
+    name: "Static landing",
+    img: "/assets/imgs/ClarifionProyect.png",
+    link: "https://clarifion-ejam-project.vercel.app/",
+    language: [
+      '<i class="fa-brands fa-js"></i>',
+      '<i class="fa-brands fa-react"></i>'
+    ]
+  },
+  {
+    name: "Static landing",
+    img: "/assets/imgs/venum-face.png",
+    link: "https://landing-venum.vercel.app/",
+    language: [
+      '<i class="fa-brands fa-html5"></i>',
+      '<i class="fa-brands fa-css3-alt"></i>',
+    ],
+  }
 ];
 function templateCard(object) {
   return `
